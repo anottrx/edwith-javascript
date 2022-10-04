@@ -301,7 +301,7 @@ while (i < alist.length) {
 
 ​<br />
 
-### Quiz2
+## Quiz2
 
 <img src="https://user-images.githubusercontent.com/59449215/193826468-9cdc00eb-38ae-4e62-ab39-8fc4d93b2212.png" width=500/>
 

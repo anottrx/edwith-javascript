@@ -256,7 +256,7 @@ UI는 사용자들이 시스템을 제어하기 위해 조작하는 장치고, A
 
 ​<br />
 
-### Quiz5
+## Quiz5
 
 <img src="https://user-images.githubusercontent.com/59449215/193826881-ad982fdd-3a1b-4a4c-8c27-960fb38b7295.png" width=500/>
 

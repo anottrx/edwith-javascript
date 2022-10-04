@@ -320,7 +320,7 @@ HTML 태그 안에서는 `background-color`였다면, 자바스크립트에서�
 
 <br />
 
-### Quiz1
+## Quiz1
 
 <img src="https://user-images.githubusercontent.com/59449215/193826192-1fe7fcf1-12d1-45c1-8eaf-ffb266a93c0a.png" width=500/>
 

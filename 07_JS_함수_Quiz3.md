@@ -259,7 +259,7 @@ hello(2, 3, 1);
 
 <br />
 
-### Quiz3
+## Quiz3
 
 <img src="https://user-images.githubusercontent.com/59449215/193826602-35dcd30b-31ca-4a36-832a-3f65363f9afe.png" width=500/>
 
