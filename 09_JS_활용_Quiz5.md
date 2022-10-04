@@ -3,6 +3,8 @@
 > [부스트코스 자바스크립트의 시작](https://www.boostcourse.org/cs124) 강의를 듣고 정리했습니다.  
 > 부스트코스 서포터즈 3기 활동으로 2021년 1월 29일에 다른 블로그에 정리한 글입니다.
 
+<br />
+
 ## 5. Javascript 활용
 
 ### (34) 파일로 쪼개서 정리 정돈하기
@@ -23,21 +25,19 @@ JavaScript 파일을 따로 만들고 HTML 파일에 적용하려면 해당 HTML
 
 그런데 `<script>`가 `<head>` 안에 있게 되면 HTML이 모두 로드되기도 전에 JS 파일이 먼저 로드가 되고 이 때문에 몇 가지 문제가 발생할 수 있다. 첫째로는 JS 안에 HTML 요소를 변경할 일이 있을 경우, 아직 HMTL이 로드가 안 되었기 때문에 제대로 동작되지 않는다고 여길 수 있다. 둘째로는 JS 파일이 많을 경우 로딩 시간이 길어질 수 있다.
 
-물론 항상 에러가 나는 것은 아니다. 또 jQuery에서 `document ready` 함수를 사용하면 HTML이 로딩 완료된 후에 JS를 실행하도록 할 수도 있다고 한다.
+물론 항상 에러가 나는 것은 아니다. 또 jQuery에서 `document ready` 함수를 사용하면 HTML이 로딩 완료된 후에 JS를 실행하도록 할 수도 있다고 한다. ([출처](https://faqs.skillcrush.com/article/176-where-should-js-script-tags-be-linked-in-html-documents))
 
-(출처: https://faqs.skillcrush.com/article/176-where-should-js-script-tags-be-linked-in-html-documents)
+<br />
 
-
-생각해보기
-
+**생각해보기**
 1) 여러 js 파일을 가져오고 싶다면 어떻게 하면 좋을지 알아봅시다. (힌트: html include multiple js files 라고 검색해보세요!)
-
  : 
 ```html
 <script src="colors.js"></script>
 <script src="fonts.js"></script>
 ```
 
+<br />
 
 ### (35) 라이브러리와 프레임워크
 
@@ -51,7 +51,7 @@ JavaScript 파일을 따로 만들고 HTML 파일에 적용하려면 해당 HTML
 
 jQuery는 자바스크립트의 라이브러리 중 가장 유명하다. 이 라이브러리를 사용하면 생산성이 더 높아진다.
 
-jQuery는 직접 파일을 다운로드해서 사용할 수도 있지만, CDN(Content Delivery Network)을 사용해서 더 편하게 사용할 수 있다. CDN는 jQuery 파일을 회사 측 서버에 보관하고, 사용자는 `<script src="">`를 통해 쉽게 사용할 수 있는 방법이다. (`<script>` 확인하는 곳: https://developers.google.com/speed/libraries#jquery)
+jQuery는 직접 파일을 다운로드해서 사용할 수도 있지만, CDN(Content Delivery Network)을 사용해서 더 편하게 사용할 수 있다. CDN는 jQuery 파일을 회사 측 서버에 보관하고, 사용자는 `<script src="">`를 통해 쉽게 사용할 수 있는 방법이다. ([`<script>` 확인하는 곳](https://developers.google.com/speed/libraries#jquery))
 
 jQuery를 사용하는 방법은 다음과 같다.
 
@@ -60,8 +60,15 @@ jQuery를 사용하는 방법은 다음과 같다.
 
 `<input type="button" onclick="funcA(); funcB();">`처럼 `onclick` 안에 여러 함수를 넣을 수 있다.
 
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/59449215/193826838-a016796f-c44f-43d5-8056-d5dd9395af4b.png" /></td>
+    <td><img src="https://user-images.githubusercontent.com/59449215/193826851-7317406f-a0f5-4b17-bfc9-1bf99cf90c10.png" /></td>
+  </tr>
+</table>
 
 web.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -98,9 +105,10 @@ web.html
     </p>
   </body>
 </html>
-
 ```
+
 colors.js
+
 ```js
 var Links = {
   setColor: function (color) {
@@ -129,7 +137,9 @@ function nightDayHandler(self) {
   }
 }
 ```
+
 fonts.js
+
 ```js
 var H1 = {
   setSize: function (size) {
@@ -145,13 +155,13 @@ function nightDayHandlerFont(self) {
 }
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) jQuery를 직접 자신의 HTML 파일에 추가해보고, 이를 이용해서 모든 h1 태그의 글자 크기를 바꾸는 코드를 작성해 봅시다.
-
  : 
-
 web.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -172,7 +182,9 @@ web.html
   </body>
 </html>
 ```
+
 fonts.js
+
 ```js
 var H1 = {
   setSize: function (size) {
@@ -188,6 +200,7 @@ function nightDayHandlerFont(self) {
 }
 ```
 
+<br />
 
 ### (36) UI vs API
 
@@ -199,16 +212,18 @@ function nightDayHandlerFont(self) {
 
 UI(User Interface)는 시각적으로 눈에 보이는 사용자가 사용하는 것을 의미한다.
 
-API(Application Programming Interface)는 애플리케이션 소프트웨어를 구축하고 통합하기 위한 정의 및 프로토콜이다. (출처: https://www.redhat.com/ko/topics/api/what-are-application-programming-interfaces)
+API(Application Programming Interface)는 애플리케이션 소프트웨어를 구축하고 통합하기 위한 정의 및 프로토콜이다. ([출처](https://www.redhat.com/ko/topics/api/what-are-application-programming-interfaces))
 
 UI는 사용자들이 시스템을 제어하기 위해 조작하는 장치고, API는 개발자가 사용하는 조작 장치다.
 
-생각해보기
+<br />
+
+**생각해보기**
 
 1) UI와 API는 어떤 관계를 가지고 있을까요?
-
  : 개발자가 API를 응용해서 만든 소프트웨어를 사용자는 UI를 통해 사용한다. 즉 서로 함께하는 관계다.
 
+<br />
 
 ### (37) 수업을 마치며
 
@@ -233,10 +248,17 @@ UI는 사용자들이 시스템을 제어하기 위해 조작하는 장치고, A
 | webGL | 3차원 그래픽 등의 웹 게임 |
 | webVR | 가상현실 |
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 이제 여러분들이 강의를 통해서 배운 내용을 가지고 HTML+Javascript+CSS를 활용한 새로운 프로젝트를 진행하게 될 겁니다. 어떤 웹 서비스를 만들고 싶으신가요?
-
  : 다양한 기능을 가진 ToDoList를 우선 만들고 싶다.
 
-​
+​<br />
+
+### Quiz5
+
+<img src="https://user-images.githubusercontent.com/59449215/193826881-ad982fdd-3a1b-4a4c-8c27-960fb38b7295.png" width=500/>
+
+​<br />
+<br />

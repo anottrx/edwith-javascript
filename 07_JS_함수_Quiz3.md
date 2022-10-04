@@ -3,6 +3,8 @@
 > [부스트코스 자바스크립트의 시작](https://www.boostcourse.org/cs124) 강의를 듣고 정리했습니다.  
 > 부스트코스 서포터즈 3기 활동으로 2021년 1월 23일에 다른 블로그에 정리한 글입니다.
 
+<br />
+
 ## 3. Javascript 함수
 
 ### (24) 함수 예고
@@ -13,24 +15,24 @@
 
 자바스크립트 함수는 `function nightDayHandler() {}`처럼 적는다.
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 함수를 사용했을 때 편리한 상황을 한 가지 생각해보세요.
-
  : 반복되는 작업이 있는 경우, 함수를 사용하면 코드 길이가 줄어들어 이해하기가 쉬워진다.
 ​
+<br />
 
 ### (25) 함수
 
 > 학습 목표: 반복문으로 처리할 수 없는 상황에서 함수가 유용하게 쓰이는 예시를 알아보고, 함수의 기본 문법을 이해할 수 있습니다.
 
 함수는 function인데, 이후 객체를 배우면 method라고 부르는 경우도 있다.
-
-https://stackoverflow.com/questions/15285293/method-vs-functions-and-other-questions
-
-https://dev.to/tiffany/what-is-the-difference-between-a-function-and-a-method-in-javascript-3mkj
+([참고 1](https://stackoverflow.com/questions/15285293/method-vs-functions-and-other-questions), [참고 2](https://dev.to/tiffany/what-is-the-difference-between-a-function-and-a-method-in-javascript-3mkj)
 
 반복문을 쓰기 어려운 상황일 때 함수를 사용하면 좋다.
+
+<img src="https://user-images.githubusercontent.com/59449215/193826549-aab62dc7-16d1-4038-87f1-e976404fc859.png" width=300/>
 
 ```html
 <!DOCTYPE html>
@@ -52,16 +54,16 @@ https://dev.to/tiffany/what-is-the-difference-between-a-function-and-a-method-in
     </ul>
   </body>
 </html>
-
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 중복된 코드가 여러 번 나타날 때, 반복문으로는 처리할 수 없지만, 함수로는 처리할 상황을 생각해 봅시다.
-
  : 계산기로 사용자가 덧셈을 반복할 때
 
-​
+<br />
+
 ### (26) 함수-매개변수와 인자
 
 > 학습 목표: 매개변수와 인자를 이용한 함수를 구현할 수 있습니다.
@@ -71,6 +73,8 @@ https://dev.to/tiffany/what-is-the-difference-between-a-function-and-a-method-in
 `function sum(left, right){}`에서 left, right이 매개변수(Parameter)다.
 
 `sum(2, 3)`에서 2, 3이 인자(Argument)다.
+
+<img src="https://user-images.githubusercontent.com/59449215/193826568-64913ea9-0750-4c5c-bee9-06a3a2a7e63c.png" width=300/>
 
 ```html
 <!DOCTYPE html>
@@ -100,13 +104,12 @@ https://dev.to/tiffany/what-is-the-difference-between-a-function-and-a-method-in
     </script>
   </body>
 </html>
-
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 다음 코드의 실행 결과는 무엇일까요?
-
 ```js
 function hello(i, j, k) {
   document.write(i + j - k);
@@ -115,6 +118,7 @@ hello(2, 3, 1);
 ```
  : 4
 
+<br />
 
 ### (27) 함수-리턴
 
@@ -123,6 +127,8 @@ hello(2, 3, 1);
 `1+1=2`에서 `1+1`은 `2`에 대한 표현식(Expression)이라고 볼 수 있다.
 
 리턴(Return)은 함수의 결과를 단순히 출력하는 것이 아니라 값을 돌려준다.
+
+<img src="https://user-images.githubusercontent.com/59449215/193826582-847c9841-fff4-4577-8592-17e593e321e6.png" width=300/>
 
 ```html
 <!DOCTYPE html>
@@ -159,15 +165,15 @@ hello(2, 3, 1);
     </script>
   </body>
 </html>
-
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 리턴을 사용했을 때의 이점이 무엇인지 생각해 보세요.
-
  : 불필요하게 변수를 할당할 필요가 없다.
 ​
+<br />
 
 ### (28) 함수 활용
 
@@ -243,12 +249,19 @@ hello(2, 3, 1);
     </p>
   </body>
 </html>
-
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 오늘 배운 것처럼 함수를 활용하는 코드로 바꾸었을 때에 원래와 비교해서 어떤 장점이 있을까요?
-
  : 코드 길이가 줄어들고, 두 버튼이 모두 같은 일을 하는 것을 바로 알 수 있다.
 
+<br />
+
+### Quiz3
+
+<img src="https://user-images.githubusercontent.com/59449215/193826602-35dcd30b-31ca-4a36-832a-3f65363f9afe.png" width=500/>
+
+<br />
+<br />

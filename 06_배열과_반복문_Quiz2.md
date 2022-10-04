@@ -3,18 +3,21 @@
 > [부스트코스 자바스크립트의 시작](https://www.boostcourse.org/cs124) 강의를 듣고 정리했습니다.  
 > 부스트코스 서포터즈 3기 활동으로 2021년 1월 18일에 다른 블로그에 정리한 글입니다.
 
+<br />
+
 ### (19) 반복문 예고
 
 > 학습 목표: 반복문이란 무엇인지 이해할 수 있습니다.
 
-자바스크립트의 반복문의 예시로는 for문, do...while문, while문, continue;, break; 등이 있다. (https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Loops_and_iteration)
+자바스크립트의 반복문의 예시로는 for문, do...while문, while문, continue;, break; 등이 있다. ([출처](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Loops_and_iteration))
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 반복문을 사용했을 때 편리한 상황을 한 가지 생각해보세요.
-
  : 로그인을 5회 실패할 경우 일정 시간 동안 계정 잠김 처리를 할 수 있다.
 
+<br />
 
 ### (20) 배열
 
@@ -24,9 +27,7 @@
 
 `push()`는 배열 마지막에 요소를 넣고, `pop()`은 배열 마지막 요소를 빼내는 것이다. `unshift()`는 배열 맨 앞에 요소를 넣는다.
 
-`splice()`를 통해 배열 안의 요소를 제거할 수 있다. `splice(m, n`은 `m`번째 요소부터 총 `n`개의 요소를 제거하는 것이다.
-
-(https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
+`splice()`를 통해 배열 안의 요소를 제거할 수 있다. `splice(m, n`은 `m`번째 요소부터 총 `n`개의 요소를 제거하는 것이다. ([출처](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array))
 
 ```html
 <!DOCTYPE html>
@@ -70,10 +71,10 @@
 
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 다음과 같은 코드를 실행했을 때 화면에 어떻게 출력될지 생각해보세요.
-
 ```js
 var animals = ["ant", "bee"];
 animals.push("camel");
@@ -82,15 +83,17 @@ document.write(animals[1]);
  : bee
 
 2)  배열에서 어떤 값을 삭제하기 위해서는 어떤 코드를 사용하면 될까요? (힌트: Javascript array remove value라고 검색해보세요!)
-
  : `animals.splice(animals["ant"], 1);`
 
+<br />
 
 ### (21) 반복문
 
 > 학습 목표: while 반복문의 작동 방식을 이해하고 적절히 사용할 수 있습니다.
 
 `while(조건) {}`에서 조건이 true일 때 실행되고 false가 되면 중단된다. 이때 반복문 안의 코드는 끝까지 진행된다.
+
+<img src="https://user-images.githubusercontent.com/59449215/193826383-6b23ffdd-74d9-48cf-b56a-cb1507c61954.png" width=300/>
 
 ```html
 <!DOCTYPE html>
@@ -119,13 +122,12 @@ document.write(animals[1]);
     </ul>
   </body>
 </html>
-
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 다음 코드의 실행 결과는 무엇일까요?
-
 ```js
 var i = 0;
 while (i < 3) {
@@ -135,6 +137,7 @@ document.write(i);
 ```
  : 4
 
+<br />
 
 ### (22) 배열과 반복문
 
@@ -145,6 +148,8 @@ document.write(i);
 `<ol>`은 ordered list, `<ul>`은 unordered list, `<li>`는 list라고 볼 수 있다.
 
 VSCode에서 `li*3`라고 입력하면 `<li></li>`가 3개 출력된다.
+
+<img src="https://user-images.githubusercontent.com/59449215/193826417-5bce20dd-2247-4f6d-af1f-887ce7477131.png" width=300/>
 
 ```html
 <!DOCTYPE html>
@@ -176,13 +181,12 @@ VSCode에서 `li*3`라고 입력하면 `<li></li>`가 3개 출력된다.
     </script>
   </body>
 </html>
-
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 반복문과 배열을 적절히 활용해서 fruits 배열을 다음과 같이 숫자와 함께 출력하려면 어떻게 해야할지 생각해보세요.
-
 ```
 1. apple
 2. banana
@@ -200,6 +204,7 @@ VSCode에서 `li*3`라고 입력하면 `<li></li>`가 3개 출력된다.
 </script>
 ```
 ​
+<br />
 
 ### (23) 배열과 반복문의 활용
 
@@ -212,6 +217,13 @@ VSCode에서 `li*3`라고 입력하면 `<li></li>`가 3개 출력된다.
 `querySelector()`는 첫 번째 해당 요소만 출력하지만, `querySelectorAll()`는 해당되는 모든 요소를 출력한다. 
 
 `var alist = document.querySelectorAll('a');`는 `<a>`에 해당되는 모든 요소를 alist에 넣어준다.
+
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/59449215/193826434-4f4f733f-8ead-486e-bbd6-9c496d051cae.png" /></td>
+    <td><img src="https://user-images.githubusercontent.com/59449215/193826443-ed9fabd7-3995-43f3-bc99-21373b331aee.png" /></td>
+  </tr>
+</table>
 
 ```html
 <!DOCTYPE html>
@@ -272,11 +284,10 @@ VSCode에서 `li*3`라고 입력하면 `<li></li>`가 3개 출력된다.
 </html>
 ```
 
+<br />
 
-생각해보기
-
+**생각해보기**
 1) 이번 강의에서 배운 코드를 약간 수정해서 첫 번째 하이퍼링크를 제외한 나머지 세 개의 하이퍼링크만 색깔이 바뀌도록 만들어보세요.
-
 : 
 ```js
 var alist = document.querySelectorAll("a");
@@ -287,4 +298,12 @@ while (i < alist.length) {
   i = i + 1;
 }
 ```
-​
+
+​<br />
+
+### Quiz2
+
+<img src="https://user-images.githubusercontent.com/59449215/193826468-9cdc00eb-38ae-4e62-ab39-8fc4d93b2212.png" width=500/>
+
+​<br />
+<br />

@@ -3,6 +3,8 @@
 > [부스트코스 자바스크립트의 시작](https://www.boostcourse.org/cs124) 강의를 듣고 정리했습니다.  
 > 부스트코스 서포터즈 3기 활동으로 2021년 1월 28일에 다른 블로그에 정리한 글입니다.
 
+<br />
+
 ## 4. Javascript 객체
 
 ### (29) 객체 예고
@@ -17,7 +19,9 @@
 
 서로 다른 객체에 속해 있는 메소드들의 이름은 겹쳐도 된다.
 
-생각해보기
+<br />
+
+**생각해보기**
 
 1) 다음 코드에서 객체와 메소드를 찾아보세요.
 
@@ -27,6 +31,7 @@ fruits.push("coconut");
 ```
  :  fruits가 객체고, `push()`가 메소드다.
 ​
+<br />
 
 ### (30) 객체(쓰기와 읽기)
 
@@ -54,12 +59,10 @@ obj["programmer"] = "egoing"
 콘솔에서 출력할 때는 `obj`만 입력해도 가능하다.
 
 `Object.keys(obj)`는 객체 안의 모든 키값을,
-
 `Object.values(obj)`는 객체 안의 모든 속성의 값들을,
+`Object.entries(obj)`는 객체 안의 모든 `[key, value]` 값들을 배열로 반환한다.([출처](https://ko.javascript.info/keys-values-entries))
 
-`Object.entries(obj)`는 객체 안의 모든 `[key, value]` 값들을 배열로 반환한다.
-
-(출처: https://ko.javascript.info/keys-values-entries)
+<img src="https://user-images.githubusercontent.com/59449215/193826665-39f91dbe-b004-455a-8a1a-4cf4a1f7b940.png" />
 
 ```html
 <!DOCTYPE html>
@@ -97,16 +100,17 @@ obj["programmer"] = "egoing"
 </html>
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) countries라는 이름의 빈 객체를 만들고, asia라는 이름을 가진 korea라는 값과, europe이라는 이름을 가진 england라는 값을 추가해봅시다.
-
  : 
 ```js 
 var countries = {};
 countries.asia = "korea";
 countries["europe"] = "england";
 ```
+<br />
 
 ### (31) 객체(순회)
 
@@ -163,16 +167,17 @@ for(var key in obj) {
 </html>
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 지난 강의의 <생각해보기>에서 만들었던 countries라는 객체에서, 모든 객체의 이름과 값을 한 줄씩 출력하는 코드를 만들어 봅시다.
-
  : 
 ```js 
 for (var key in countries) {
   document.write(key + " : " + countries[key] + "<br>");
 }
 ```
+<br />
 
 ### (32) 객체(프로퍼티와 메소드)
 
@@ -185,6 +190,8 @@ for (var key in countries) {
 메소드 내에서의 this는 해당 메소드가 쓰인 객체를 가리킨다.
 
 객체에 해당하는 변수들은 프로퍼티(Property)라고 한다. `obj.programmer`에서 programmer가 그 예시이다.
+
+<img src="https://user-images.githubusercontent.com/59449215/193826734-d6571f1a-e579-4c09-886a-0e5979db97b5.png" width=300/>
 
 ```html
 <!DOCTYPE html>
@@ -232,10 +239,10 @@ for (var key in countries) {
 </html>
 ```
 
-생각해보기
+<br />
 
+**생각해보기**
 1) 조건문을 사용해서 key가 programmer일 때만 출력하는 메소드 printProgrammer()을 만들어 봅시다.
-
  : 
 ```js
 coworkers.printProgrammer = function () {
@@ -247,6 +254,7 @@ coworkers.printProgrammer = function () {
 };
 ```
 
+<br />
 
 ### (33) 객체의 활용
 
@@ -336,8 +344,19 @@ var obj = {
 </html>
 ```
 
-생각해보기
+<br />
+
+**생각해보기**
 
 1) 이번 강의에서 수정한 코드가 이전의 코드에 비해서 더 좋아진 점은 무엇일까요?
 
  : 객체마다 서로 연관된 메소드들을 정리해놓아 보기 깔끔해졌다. 서로 다른 객체 내의 메소드 이름은 중복되어도 되기 때문에 이름이 간단해졌다. 
+
+<br />
+
+### Quiz4
+
+<img src="https://user-images.githubusercontent.com/59449215/193826756-ae6e25be-519c-4374-8f55-282912b35760.png" width=500/>
+
+<br />
+<br />
